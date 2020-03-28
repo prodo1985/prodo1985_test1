@@ -15,7 +15,7 @@ def generate_head(title):
     title="<title>"+ title+"</title>"
     return "<head>"+title+"</head>"
 
-def save_page(title, header, paragraps, output="2.html"):
+def save_page(title, header, paragraps, output="index.html"):
     fp=open(output,'w')
     today=dt.now().date()
     page=generate_page(
